@@ -1,3 +1,11 @@
+Metadata-Version: 2.4
+Name: textcleaner
+Version: 0.1.0
+Summary: A text cleaning utility for NLP tasks.
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Dynamic: requires-python
+
 # textcleaner
 
 Python package that cleans text (remove URLs, emojis, special chars)
