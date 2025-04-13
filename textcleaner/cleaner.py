@@ -22,3 +22,14 @@ def clean_text(text: str) -> str:
     text = remove_emojis(text)
     text = unicodedata.normalize("NFKD", text)  # Normalize unicode
     return text.strip()
+
+import click
+
+@click.command()
+@click.argument("text")
+def clean_cli(text: str):
+    """CLI for textcleaner."""
+    print(clean_text(text))
+
+if __name__ == "__main__":
+    clean_cli()

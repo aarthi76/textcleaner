@@ -7,3 +7,10 @@ setup(
     install_requires=[],  # Add dependencies if needed
     python_requires=">=3.6",
 )
+
+setup(
+    ...,
+    entry_points={
+        "console_scripts": ["textcleaner=textcleaner.cleaner:clean_cli"]
+    },
+)
